@@ -61,41 +61,41 @@ hr {
     color: rgb(223, 162, 9);
     font-size: 5px;
 }
-.row {
-    text-align: center;
-}
 
-.coloum {
-    margin: 20px 20px 20px 25px;
-    float: left;
-    width: 30%;
-    padding: 5px;
-    text-align: center;
-}
 .coloum p {
     color: rgb(223, 162, 9);
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.view_all_bt {
-    border: 2px solid rgb(223, 162, 9);
-    padding: 2px;
-    margin-top: 20px;
-    margin-left: 45%;
-    margin-bottom: 20px;
-    margin-right: 50%;
-    width: 150px;
-    text-align: center;
-    background-color: rgb(223, 162, 9);
-}
-
-.view_all_bt p{
-    color: whitesmoke;
     font-size: 20px;
+    text-align:  center;
+}
+
+.button_box {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+}
+
+#button {
+    background-color: rgb(223, 162, 9);
+    width: 50%;
+    height: 40px;
+    margin: 25px;
+    border-radius: 25px;
+    border-color: rgb(223, 162, 9);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#button:hover {
+    background-color: rgb(223, 162, 9);
+    width: 60%;
+    height: 40px;
+    margin: 25px;
+    border-radius: 25px;
+    border-color: rgb(223, 162, 9);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+    font-size: 25px;
 }
 
 hr {
@@ -119,4 +119,57 @@ footer{
 }
 footer p {
     color: whitesmoke;
+}
+
+@media screen and (max-width: 900px) {
+
+    .row {
+        display: inline;
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .coloum {
+            margin: auto;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+    }
+    
+    .coloum p {
+            display: inline-block;
+            margin: 5px;
+            text-align: center;
+            width: 100%;
+    }
+    img {
+        width: 1000%;
+        margin: auto;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .coloum {
+        margin: 50px;
+        float: left;
+    }
+
+    
+
+    img {
+        width: 100%;
+
+    }
+    
 }
