@@ -147,7 +147,7 @@ footer{
     padding: 0px;
 }
 footer p {
-    color: whitesmoke;
+    color: white;
 }
 
 @media screen and (max-width: 900px) {
